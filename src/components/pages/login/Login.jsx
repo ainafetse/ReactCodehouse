@@ -2,16 +2,16 @@ import { useState } from "react";
 
 export const Login = () => {
 
-  const[ nombre , setNombre ]= useState("pepe")
+  const[ name , setName ]= useState("John")
 
   const changeName =()=>{
-    setNombre ("juan")
+    setName ("Juan")
   }
 
   return (
   <div>
-    <h2>{nombre}</h2>
-    <button onClick={changeName}>Cambiar nombre</button>
+    <h2>{name}</h2>
+    <button onClick={changeName}>Change Name</button>
   </div>
   );
 };

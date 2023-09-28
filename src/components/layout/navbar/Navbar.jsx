@@ -1,8 +1,10 @@
+import CartWidget from "../../common/cartWidget/CartWidget"
+
 
 export const Navbar = () => {
   return (
     <div>
-        <h4>Logo</h4>
+        <h4>RENKENDO</h4>
         <ul>
             <li>Genderless Shirts</li>
             <li>Utilery</li>
@@ -10,7 +12,10 @@ export const Navbar = () => {
             <li>Bottoms</li>
             <li>Prints</li>
         </ul>
-        {/*WIDGET CARRITO */}
+        <CartWidget/>
     </div>
   )
 }
+
+
+

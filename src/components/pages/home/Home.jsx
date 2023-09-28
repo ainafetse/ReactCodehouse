@@ -10,7 +10,7 @@ export const Home = () => {
     setDarkMode( !darkMode )
   };
 
-  const sumar = () => {
+  const add = () => {
     setCounter(counter + 1);
   };
 
@@ -19,8 +19,8 @@ export const Home = () => {
   return (
     <div>
       <h4>{counter}</h4>
-      <button onClick={sumar}>Sumar</button>
-      <button onClick={switchMode}>Cambiar modo</button>
+      <button onClick={add}>Add</button>
+      <button onClick={switchMode}>Dark Mode</button>
     </div>
   );
 };
