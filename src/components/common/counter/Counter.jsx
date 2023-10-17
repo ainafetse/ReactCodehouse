@@ -1,11 +1,12 @@
 import { Button } from "@mui/material"
 
-const Counter = ({sumar, contador, restar}) => {
+const Counter = ({add, counter, remove, onAdd}) => {
   return (
     <div>
-        <Button variant="contained" color="secondary" onClick={sumar}>Sumar</Button>
-        <h4>{contador}</h4>
-        <Button variant="contained" color="secondary" onClick={restar}>Restar</Button>
+        <Button variant="contained" color="secondary" onClick={add}>Add</Button>
+        <h4>{counter}</h4>
+        <Button variant="contained" color="secondary" onClick={remove}>Remove</Button>
+        <Button onClick={ () => onAdd(counter)}>Add to cart</Button>
     </div>
   )
 }

@@ -1,20 +1,28 @@
-import { ThemeProvider } from "@emotion/react";
-import CounterContainer from "./components/common/counter/CounterContainer";
-import { Navbar } from "./components/layout/navbar/Navbar";
-import { Home } from "./components/pages/home/Home";
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
-import { customTheme } from "./themeConfig";
-/*import Login from "./components/pages/login/Login";*/
 
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/pages/itemDetailContainer/ItemDetailContainer";
+import CartContainer from "./components/pages/cart/CartContainer";
+import { ThemeProvider } from "@emotion/react";
+import { customTheme } from "./themeConfig";
+import Layout from "./components/layout/Layout";
 
 function App() {
   return (
-    <ThemeProvider theme={customTheme}>
-      <Navbar />
-      <Home />
-      <ItemListContainer/>
-      <CounterContainer stock={5}/>
+    <BrowserRouter>
+      <ThemeProvider theme={customTheme}>
+        <Routes>
+          <Route element={<Layout/>}>
+            <Route path="/" element={<ItemListContainer/>} />
+            <Route path="/category/:categoryName" element={<ItemListContainer/>} />
+            <Route path="/cart" element={<CartContainer/>} />
+            <Route path="/itemDetail/:category/:id" element={<ItemDetailContainer/>} />
+            <Route path="/*" element={<h1>404 Not Found</h1>} />
+          </Route>
+
+        </Routes>
       </ThemeProvider>
+    </BrowserRouter>
   );
   }
 

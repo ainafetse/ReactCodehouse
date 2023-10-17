@@ -1,0 +1,8 @@
+.navBar{
+    display: flex;
+    padding: 2rem;
+
+}
+.menuBar{
+    display: inline-flex;
+}
