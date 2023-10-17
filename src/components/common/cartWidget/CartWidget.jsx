@@ -1,10 +1,12 @@
-import {AiOutlineShoppingCart} from "react-icons/ai"
+import { Badge } from "@mui/material"
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const CartWidget = () => {
   return (
     <div>
-        <span>2</span>
-        <AiOutlineShoppingCart/>
+        <Badge badgeContent={0} showZero color="primary">
+      <ShoppingCartIcon color="action" />
+    </Badge>
     </div>
   )
 }

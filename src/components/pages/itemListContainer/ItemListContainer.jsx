@@ -1,13 +1,9 @@
+import ItemList from './ItemList'
 
-
-const ItemListContainer = ({greeting, age, x}) => {
-
+const ItemListContainer = () => {
   return (
-    <div>
-        <h4>{greeting}</h4>
-        <h5>Your age is {age}</h5>
-    </div>
+    <ItemList/>
   )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
