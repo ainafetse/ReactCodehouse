@@ -1,0 +1,13 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* To evenly space the items in the row */
+}
+
+
+  .product-card {
+    width: 25%; /* Each item occupies 25% of the available width */
+    padding: 10px; /* Adjust padding as needed for spacing */
+    box-sizing: border-box; /* To include padding in the item's width */
+}
+

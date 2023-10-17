@@ -6,9 +6,15 @@ import Footer from "./footer/footer"
 const Layout = () => {
   return (
     <div>
-        <Navbar/>
-        <Outlet/>
+        <div>
+            <Navbar/>
+        </div>
+        <div style={{minHeight:"80vh"}}>
+            <Outlet/>
+        </div>
+        <div className=" footer">
         <Footer/>
+        </div>
     </div>
   )
 }

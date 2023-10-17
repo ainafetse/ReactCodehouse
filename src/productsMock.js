@@ -26,7 +26,7 @@ export let products = [
         stock: 12,
         description: "100% Cotton shirt. Artwork designed by Renkendo.",
         category: "shirts"
-    },
+    },/*
     {
         id: 4,
         img: "https://res.cloudinary.com/djzwkvu9n/image/upload/v1697517193/product-03-A_ye4wh0.jpg",
@@ -35,7 +35,7 @@ export let products = [
         stock: 14,
         description: "100% Cotton shirt. Artwork designed by Renkendo.",
         category: "shirts"
-    },
+    },*/
     {
         id: 5,
         img: "https://res.cloudinary.com/djzwkvu9n/image/upload/v1697517194/product-04-A_bdybvo.jpg",
@@ -53,7 +53,7 @@ export let products = [
         stock: 4,
         description: "100% Cotton shirt. Artwork designed by Renkendo.",
         category: "shirts"
-    },
+    },/*
     {
         id: 7,
         img: "https://res.cloudinary.com/djzwkvu9n/image/upload/v1697517194/product-06-A_betgwk.jpg",
@@ -71,7 +71,7 @@ export let products = [
         stock: 5,
         description: "100% Cotton shirt. Artwork designed by Renkendo.",
         category: "shirts"
-    },
+    },*/
     {
         id: 9,
         img: "https://res.cloudinary.com/djzwkvu9n/image/upload/v1697517188/product-08-C_scdxsj.png",

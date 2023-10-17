@@ -4,7 +4,7 @@ import CounterContainer from "../../common/counter/CounterContainer"
 
 export const ItemDetail = ({productSelected, onAdd}) => {
   return (
-    <div>
+    <div className="boxedContainer">
         {/*aca todo el detalle */}
         <img src={productSelected.img} alt="" style={{ width: '365px' }} />
         <h2>{productSelected.title}</h2>
