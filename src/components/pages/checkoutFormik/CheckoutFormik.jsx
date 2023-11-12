@@ -32,7 +32,7 @@ const CheckoutFormik = () => {
         .required("This field is required")
         .matches(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,15}$/, {
           message:
-            "Password must contain at least one capital letter, one number, and one special character and be 8 characters long",
+            "Password must contain at least one capital letter, one number, and one special character and be 8 charachte",
         }),
       repeatPassword: Yup.string()
         .required("This field is required")

@@ -3,7 +3,7 @@ import { products } from "../../../productsMock"
 import {ItemDetail} from "./ItemDetail"
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
-
+import Swal from "sweetalert2";
 
 
 
@@ -35,6 +35,14 @@ const ItemDetailContainer = () => {
             quantity: addedToCart
         };
         addToCart(onCart);
+        
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Product added to cart",
+            showConfirmButton: false,
+            timer: 1500
+          });
 
     };
 
