@@ -1,26 +1,18 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/pages/itemDetailContainer/ItemDetailContainer";
-import CartContainer from "./components/pages/cart/CartContainer";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@emotion/react";
 import { customTheme } from "./themeConfig";
-import Layout from "./components/layout/Layout";
+import AppRouter from "./router/AppRouter";
+import CartContextComponet from "./context/CartContext";
+
 
 function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={customTheme}>
-        <Routes>
-          <Route element={<Layout/>}>
-            <Route path="/" element={<ItemListContainer/>} />
-            <Route path="/category/:categoryName" element={<ItemListContainer/>} />
-            <Route path="/cart" element={<CartContainer/>} />
-            <Route path="/itemDetail/:category/:id" element={<ItemDetailContainer/>} />
-            <Route path="/*" element={<h1>404 Not Found</h1>} />
-          </Route>
-
-        </Routes>
+        <CartContextComponet>
+        <AppRouter/>
+        </CartContextComponet>
       </ThemeProvider>
     </BrowserRouter>
   );
