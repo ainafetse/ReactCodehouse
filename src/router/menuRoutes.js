@@ -1,7 +1,8 @@
 import ItemListContainer from "../components/pages/itemListContainer/ItemListContainer";
 import ItemDetailContainer from "../components/pages/itemDetailContainer/ItemDetailContainer";
 import CartContainer from "../components/pages/cart/CartContainer";
-import CheckoutFormik from "../components/pages/checkoutFormik/CheckoutFormik";
+//import CheckoutFormik from "../components/pages/checkoutFormik/CheckoutFormik";
+import CheckoutPayment from "../components/pages/checkoutPayment/CheckoutPayment";
 
 export const routes = [
     {
@@ -27,7 +28,7 @@ export const routes = [
     {
         id: "checkout",
         path: "/checkout",
-        Element: CheckoutFormik ,
+        Element: CheckoutPayment ,
     },
 
 ]
